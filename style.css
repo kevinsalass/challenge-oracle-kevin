@@ -1,0 +1,361 @@
+body{
+    background:#EFF1FA;
+}
+
+.encabezado{
+    width: 948px;
+    margin: 0 auto;
+
+} 
+
+.logo{
+    position: absolute;
+    left: 5.67%;
+    right: 37.43%;
+    top: 10%;
+    bottom: 0%;
+}
+
+.principal{
+    width: 948px;
+    margin: 0 auto;
+}
+
+.areaTexto{
+    width: 948px;
+    margin: 0 auto;
+}
+
+form label, form input{
+    position: absolute;
+    width: 577px;
+    height: 88px;
+    left: 240px;
+    top: 168px;
+    border: none;
+    background-color: #EFF1FA;
+}
+
+
+.texto {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+::placeholder { color: #0A3871;}
+
+/*empieza los botones de encriptar*/
+
+.imagen{
+    width: 948px;
+    margin: 0 auto;
+}
+
+.imagen label{ 
+    position: absolute;
+    display: flex;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    margin-top: 30em;
+    margin-left: 0px;
+}
+
+.imagen-checkbox{
+    position: absolute;
+    margin-inline: -19px;
+}
+
+.titulo-advertencia {
+    width: 205px;
+    height: 18px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.botones{
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    flex-wrap: wrap;
+    position: absolute;
+    margin-top: 32em;
+    margin-left: 1em;
+}
+
+#btnEncriptar{
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    transition: 1s all;
+}
+
+#btnEncriptar:hover{
+    transform: scale(0.9);
+}
+
+#btnDesencriptar{
+    width: 328px;
+    height: 67px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    transition: 1s all;
+}
+
+#btnDesencriptar:hover{
+    transform: scale(0.9);
+}
+
+/*Empieza el area donde se muestra el texto encriptado*/
+
+.rectangulo{
+    width: 948px;
+    margin: 0 auto;
+}
+
+.rectangulo1 li{
+    position: absolute;
+    width: 390px;
+    height: 700px;
+    left: 930px;
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+#textoDesencriptado{
+    position: absolute;
+    top: 2em;
+    width: 380px;
+    height: 500px;
+    border: none;
+    display: none;
+}
+
+#textoDesencriptado:focus-visible{
+    outline: none;
+}
+
+.rectangulo1 img{
+    margin-top: 40%;
+    margin-left: 10%;
+    height: 300px;
+}
+
+#descripcion p{
+    width: 336px;
+    height: 58px;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 10%;
+    color: #343A40;
+}
+
+#descripcion-2 p{
+    padding: 5px;
+    width: 336px;
+    height: 48px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+
+#copiar{
+    width: 328px;
+    height: 67px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    top: 81%;
+    left: 2em;
+    display: none;
+    transition: 1s all;
+}
+
+#copiar:hover{
+    transform: scale(0.9);
+}
+
+footer{
+    position: relative;
+    top: 960px;
+    text-align: center;
+    background: linear-gradient(#000000, rgba(131, 222, 226, 0.63));
+    padding: 40px;
+}
+
+.pie-de-pagina{
+    color: #000000;
+    font-size: 13px;
+    margin: 20px;
+}
+
+
+@media screen and (max-width:1024px){
+    header{
+        width: auto;
+    }
+    .areaTexto{
+        width: auto;
+    }
+    form label, form input{
+        min-width: 300px;
+        min-height: 150px;
+    }
+    .imagen{
+        width: auto;
+    }
+    .imagen label{
+        position: absolute;
+        left: 26%;
+    }
+    .botones{
+        width: auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #btnEncriptar, #btnDesencriptar{
+        width: 400px;
+    }
+    .rectangulo, .rectangulo1{
+        width: 100%;
+    }
+    .rectangulo1 li{
+        position: absolute;
+        left: 200px;
+        top: 600px;
+        width: 688px;
+        height: 333px;
+    }
+    #textoDesencriptado{
+        width: 624px;
+        height: 343px;
+        background: none;
+    }
+    .rectangulo1 img{
+        display: none;
+    }
+    #descripcion p, #descripcion-2 p{
+        width: 624px;
+        height: 29px;
+        position:absolute;
+        top: 20%;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%
+    }
+    #copiar{
+        position:absolute;
+        left: 25%;
+    }
+
+}
+
+@media screen and (max-width:480px){
+    header{
+        width: auto;
+        margin: auto;
+    }
+    .areaTexto{
+        width: auto;
+    }
+    form label, form input{
+        width:100% ;
+        min-height:200px ;
+    }
+    .imagen{
+        width: auto;
+    }
+    .imagen label{
+        position: absolute;
+        left: 55%;
+        top: 3em;
+    }
+    .botones{
+        width: 100%;
+        margin: 20px;
+        position: absolute;
+        top: 67%;
+        left: 44%;
+    }
+    #btnEncriptar, #btnDesencriptar{
+        width: 400px;
+    }
+    .rectangulo, .rectangulo1{
+        width: 100%;
+    }
+    .rectangulo1 li{
+        position: absolute;
+        left: 2px;
+        top: 90%;
+        width: 688px;
+        height: 428px;
+    }
+    #textoDesencriptado{
+        width: 624px;
+        height: 343px;
+        background: none;
+    }
+    .rectangulo1 img{
+        display: none;
+    }
+    #descripcion p, #descripcion-2 p{
+        width: 624px;
+        height: 29px;
+        position:absolute;
+        top: 20%;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%
+    }
+    #copiar{
+        position:absolute;
+        left: 25%;
+    }
+    footer{
+        top: 1307px;
+        width: 607px;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="encabezado">
+                <img src="imagen_challenge/Logo.png" class="logo">
+            </div>
+        </header>
+
+        <main>
+            <section class="principal">
+                <div class="areaTexto">
+                    <form>
+                        <label for="textoEncriptar"></label>
+                        <input type="text" onkeyup="this.value=letras(this.value)" id="textoEncriptar" class="texto" title="Solo se permite letras en minusculas" required placeholder="Ingrese el texto aqui">
+                    </form>
+                </div>
+    
+                <div class="imagen">
+                    <label class="checkbox"><input type="hidden"> <img src="imagen_challenge/Vector.png" class="imagen-checkbox"><h1 class="titulo-advertencia"> minusculas y sin acentos</h1></label>
+                </div>
+
+                <div class="botones">
+                    <button  type="button" id="btnEncriptar" onclick="encriptar()">Encriptar</button>
+                    <button type="button" id="btnDesencriptar" onclick="desencriptar()">Desencriptar</button>
+                  </div>
+
+                <div class="rectangulo">
+                    <ul class="rectangulo1">
+                        <li>
+                            <label for="textoEncriptando"></label>
+                            <textarea cols="70" rows="10" id="textoDesencriptado"></textarea>
+                            <img src="imagen_challenge/persona.svg" id="imgPersona">
+                            <div id="descripcion"><p>Ningun mensaje fue encrontrado</p></div>
+                            <div id="descripcion-2"><p>Ingrese el texto que desee encripar o desencriptar</p></div>
+                            <button type="button" id="copiar" onclick="copiar()">copiar</button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+           
+            <footer>
+                <p class="pie-de-pagina">&copy Copyright Kevin Darinel Salas Perez - 2023</p>
+                <a href="https://www.linkedin.com/in/kevin-darinel-salas-pérez"><img src="imagen_challenge/likendin.png" width="50px"></a>
+                <a href="https://github.com/kevinsalass"><img src="imagen_challenge/gitt.png" width="50px"></a>
+            </footer>
+        </main>
+    </body>
+</html>
